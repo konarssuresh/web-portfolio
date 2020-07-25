@@ -1,0 +1,42 @@
+.button{
+
+    &__primary{
+        &:visited,
+        &:link{
+            display:inline-block;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor:pointer;
+            padding:1rem 3rem;
+            border-radius: 10rem;
+            font-size: 1.7rem;
+            letter-spacing: 0.5rem;
+            margin-top: 1rem;
+            transition: all 0.2s;
+            border:none;
+        }
+
+        &:hover{
+            transform: translateY(-0.3rem);
+            box-shadow: 0 1rem 2rem rgba($color-black,0.2);
+        }
+
+        &:focus,
+        &:active{
+            outline: none;
+            transform: translateY(-0.1rem);
+            box-shadow: 0 0.5rem 1rem rgba($color-black,0.2);
+        }
+
+        &--white{
+            background-color:$Grey-light-4 ;
+            color:$color-primary;
+        }
+
+        &--animated{
+            animation: moveInBottom 1.5s 0.4s;
+            animation-fill-mode: backwards;
+        }
+    }
+}
